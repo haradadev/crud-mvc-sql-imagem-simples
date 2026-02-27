@@ -1,5 +1,6 @@
 ﻿# crud-mvc-sql-imagem-simples
  Criar a pasta em HTDOCS: crud-mvc-sql-imagem-simples
+
 #CRIANDO A ESTRUTURA BÁSICA DO MVC
 Abrir o VSCode:
 1- Selecionar pasta crud-mvc-sql-imagem-simples 
@@ -33,5 +34,6 @@ CREATE TABLE usuario (
     login VARCHAR(50),
     senha VARCHAR(100)
 );
+
 
 
