@@ -1,6 +1,9 @@
-colar o código do classroom
 <h2>Lista de Usuários</h2>
+<br>
+<br>
 <a href="index.php?acao=criar">Novo Usuário</a>
+<br>
+<br>
 <table border="01" >
 <tr>
     <th>ID</th>

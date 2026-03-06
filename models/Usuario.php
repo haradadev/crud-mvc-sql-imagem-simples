@@ -10,11 +10,11 @@ function listarUsuarios() {
     return mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 }
 
-function inserirUsuario($nome, $email, $imagem) {
+function inserirUsuario($nome, $email, $imagem, $login, $senha, $papel) {
 
     $con = conectar();
-    $sql = "INSERT INTO usuario (nome, email, imagem)
-            VALUES ('$nome', '$email', '$imagem')";
+    $sql = "INSERT INTO usuario (nome, email, imagem, login, senha, papel)
+         VALUES ('$nome', '$email', '$imagem', '$login', '$senha', '$papel')";
 
     mysqli_query($con, $sql);
 }
@@ -39,4 +39,16 @@ function excluirUsuario($id) {
     $con = conectar();
     $sql = "DELETE FROM usuario WHERE id=$id";
     mysqli_query($con, $sql);
+}
+
+function login_adm($login, $senha){
+
+    $con = conectar();
+
+    $sql = "SELECT * FROM usuario 
+    WHERE login='$login' AND senha='$senha'";
+
+    $resultado = mysqli_query($con, $sql);
+
+    return mysqli_fetch_assoc($resultado);
 }

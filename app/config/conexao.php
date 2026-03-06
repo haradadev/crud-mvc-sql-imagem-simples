@@ -12,5 +12,4 @@ function conectar() {
     return $con;
 }
 
-
 ?>
