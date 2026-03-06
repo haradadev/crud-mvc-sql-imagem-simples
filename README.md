@@ -32,8 +32,10 @@ CREATE TABLE usuario (
     email VARCHAR(100),
     imagem VARCHAR(255),
     login VARCHAR(50),
-    senha VARCHAR(100)
+    senha VARCHAR(100),
+    papel VARCHAR(5)
 );
 
+Para a nova atualização LOGIN E SENHA 
 
 
